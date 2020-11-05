@@ -1,0 +1,639 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Responsive Multipurpose HTML5 Template
+  Template URI: 
+  Description: Responsive Multipurpose, one page, Portfolio, Business,  Creative HTML Templatee
+  Author: Mehedi Hasan
+  Author URI: http://mrmehedihasan.com
+  Version: 1.0
+
+CSS INDEX
+===================
+
+-----------------------------------------------------------------------------------*/
+
+/* **********************************
+Reset CSS
+************************************** */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/********************************
+ Typography Style
+******************************** */
+@font-face {
+  font-family: 'Hanken';
+  src: url('../webfont/HankenGrotesk-Medium.ttf'); /* IE9 Compat Modes */
+  src: url('../webfont/HankenGrotesk-Medium.ttf') format('embedded-opentype'), /* IE6-IE8 */
+     url('../webfont/HankenGrotesk-Medium.eot') format('eot'), /* Super Modern Browsers */
+     url('../webfont/HankenGrotesk-Medium.woff') format('woff'), /* Super Modern Browsers */
+     url('../webfont/HankenGrotesk-Medium.otf') format('otf'), /* Super Modern Browsers */
+     url('../webfont/HankenGrotesk-Medium.woff2') format('woff2'), /* Pretty Modern Browsers */
+     url('../webfont/HankenGrotesk-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
+
+body{
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'HankenGrotesk';
+  line-height:1.5;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1{
+  font-size: 36px; 
+}
+
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 26px;   
+}
+
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 16px;
+}
+p{
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/*-------------------------
+loader
+----------------------------*/
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../img/lg.messenger-typing-preloader.gif") 50% 50% no-repeat #f5f5f5;
+
+}
+
+.scrolltotop {
+  color: #fff;
+  background-color: rgba(54,54,54,1);
+  padding: 6px 12px;
+  position: fixed;
+  line-height: 1.2;
+  right: 15px;
+  bottom: 10px;
+  text-decoration: none;
+  display: none;
+  font-size: 24px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+.scrolltotop:hover {
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+/* **************************
+header-area
+*************************** */
+.header-area {
+  background: #fff;
+}
+.navbar-brand img{
+  height: 40px;
+}
+.navbar-light .navbar-nav .nav-link {
+  display: inline-block;
+  color: #424150;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Hanken';
+  padding: 0;
+  line-height: 1.2;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+.navbar-light .navbar-nav .nav-item{
+  margin: 0 10px;
+}
+.mr-auto, .mx-auto {
+  margin-right: auto!important;
+  margin: 0 auto;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #424150;
+  border-bottom: 1px solid #424150;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #424150;
+  display: inline-block;
+}
+.social {
+  display: inline-block;
+  width: 60px;
+}
+.social ul{
+  margin: 0;
+  padding: 0;
+}
+.social ul li{
+  list-style: none;
+  display: inline;
+}
+.social ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  color:#424150;
+  margin: 0 1px; 
+}
+
+
+
+/* ****************************
+main-slider
+***************************** */
+.main-slider {
+  overflow: hidden;
+  margin-top: 74px;
+}
+
+.main-slider .item {
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.main-slider .tag {
+  position: absolute;
+  top: 35%;
+  left: 26%;
+  z-index: 99;
+}
+.slide-img{
+  height: 100%;
+  width: 100%;
+}
+.slide-img img{
+  height: 100%;
+  width: 100%;
+}
+.slide-img:after{
+  display: block;
+  content: '';
+  clear: both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+.main-slider .tag h1{
+  color: #fff;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 36px;
+  text-align: center;
+
+}
+
+.main-slider .owl-nav {
+  display: none;
+}
+
+.main-slider .owl-dots{
+  display: block;
+  position: absolute;
+  right: 46%;
+  bottom: 25px;
+}
+
+.main-slider .owl-dot {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  margin: 3px;
+}
+.main-slider .owl-dot.active{
+  background-color: #f6ae16;
+}
+
+/* ***********************
+over-area
+********************** */
+.over-area {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.title p{
+  color: #424150; 
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Hanken';
+  font-weight: 500;
+  display: inline-block;
+}
+.title p:after{
+  display: block;
+  content: '';
+  clear: both;
+  border-bottom: 1px solid #424150;
+}
+
+.content h2{
+  font-family: 'Abril Fatface', cursive;
+  color: #272937;
+  line-height: 1.3;
+  margin: 15px 0;
+}
+
+.content p{
+  color: #272937;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.content p.advice {
+  margin-top: 30px;
+}
+.con-img1 {
+  position: relative;
+}.con-img2 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.con-img1:after {
+  display: block;
+  content: '';
+  clear: both;
+  background: url(../img/Group10.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 88%;
+  width: 230px;
+  position: absolute;
+  top: 23%;
+  right: -98px;
+  z-index: -1;
+}
+
+
+.con-img2:after {
+  display: block;
+  content: '';
+  clear: both;
+  background: url(../img/Group11.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 64%;
+  width: 130px;
+  position: absolute;
+  top: 53%;
+  left: -63px;
+  z-index: -1;
+}
+
+
+
+/* **************************
+menu-area
+***************************** */
+
+.menu-area {
+  overflow: hidden;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #e2f3f5;
+  background-image: url('../img/Group33.png');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: left;
+}
+
+
+.menu-area .content p{
+  margin: 25px 0;
+}
+
+
+a.btn-cus1 {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f6ae16;
+  color: #fff;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  line-height: 17px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: all 0.4s ease
+}
+a.btn-cus1:hover{
+  transition: all 0.4s ease; 
+  background-color: transparent;
+  border: 1px solid #424150;
+  color: #424150;
+}
+
+
+/* ***************************
+Reserveren
+***************************** */
+.reserveren {
+  overflow: hidden;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #424150;
+  background-image: url('../img/Group111.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65px;
+}
+.reserveren .title p{
+  color: #fff;
+}
+.reserveren .title p:after{
+  border-bottom: 1px solid #fff;
+}
+.reserveren .content h2{
+  color: #fff;
+}
+
+a.btn-cus2 {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #6e9d43;
+  border: 1px solid #6e9d43;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Hanken';
+  text-transform: uppercase;
+  line-height: 17px;
+  padding: 8px 30px;
+  border-radius: 30px;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+a.btn-cus2:hover{
+  transition: all 0.4s ease;
+  background-color: transparent;
+  border: 1px solid #6e9d43;
+  color: #6e9d43;
+}
+
+
+
+a.btn-cus3 {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #6e9d43;
+  color: #6e9d43;
+  font-size: 14px;
+  font-family: 'Hanken';
+  text-transform: uppercase;
+  line-height: 17px;
+  padding: 8px 50px;
+  border-radius: 30px;
+   margin: 5px;
+   transition: all 0.4s ease;
+}
+a.btn-cus3:hover{
+  transition: all 0.4s ease;
+  background-color: #6e9d43;
+  border: 1px solid #6e9d43;
+  color: #fff;
+}
+
+
+/* ****************************
+instagram-area
+****************************** */
+.instagram-area {
+  overflow: hidden;
+  text-align: center;
+}
+
+.instagram-area .title h2{
+  font-family: 'Hanken';
+  color: #272937;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+.instagram-area .title h2 i{
+  font-size: 30px;
+}
+.instagram-area {
+  overflow: hidden;
+  text-align: center;
+  margin: -7px 0;
+}
+.instagram {
+  height: 100%;
+  width: 100%;
+}
+#Instafeed ul{
+  margin: 0;
+  padding: 0;
+}
+#Instafeed {
+  list-style: none;
+  display: inline;
+  overflow: hidden;
+  text-align: center;
+}
+
+#Instafeed a{
+  margin: -7px 0;
+  display: inline-block;
+}
+.instagram .instt{
+  max-height: 320px;
+  height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+.instagram a img{
+  height: 320px;
+  width: 100%;
+}
+
+
+/* **************************
+footer-area
+***************************** */
+.footer-area {
+  overflow: hidden;
+  padding: 50px 0 0 0;
+  background-color: #424150;
+  background-image: url('../img/Group22.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 70px;
+}
+
+.footer-grid {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.footer-grid h4{
+  font-size: 15px;
+  font-family: 'Hanken';
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.3;
+  display: inline-block;
+  margin: 15px 0;
+}
+.footer-grid h4:after{
+  display: block;
+  content: '';
+  clear: both;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-grid a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.8;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+.footer-grid a:hover{
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+.footer-grid .info{
+  margin-bottom: 30px;
+}
+
+.footer-grid .info img{
+  height: 60px;
+}
+
+.table td, .table th {
+  padding: 2px 0;
+  vertical-align: top;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.table td {
+  text-align: right;
+}
+
+.last th, .last td{
+ border-bottom: 1px solid transparent;
+}
+
+
+.footer-grid address {
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.copy a{
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+.copy a:hover{
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+

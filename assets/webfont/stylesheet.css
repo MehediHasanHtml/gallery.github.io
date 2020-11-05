@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('HankenGrotesk-Medium.eot');
+    src: url('HankenGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('HankenGrotesk-Medium.woff2') format('woff2'),
+        url('HankenGrotesk-Medium.woff') format('woff'),
+        url('HankenGrotesk-Medium.ttf') format('truetype'),
+        url('HankenGrotesk-Medium.svg#HankenGrotesk-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('HankenGrotesk-Regular.eot');
+    src: url('HankenGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HankenGrotesk-Regular.woff2') format('woff2'),
+        url('HankenGrotesk-Regular.woff') format('woff'),
+        url('HankenGrotesk-Regular.ttf') format('truetype'),
+        url('HankenGrotesk-Regular.svg#HankenGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('HankenGrotesk-Regular_1.eot');
+    src: url('HankenGrotesk-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('HankenGrotesk-Regular_1.woff2') format('woff2'),
+        url('HankenGrotesk-Regular_1.woff') format('woff'),
+        url('HankenGrotesk-Regular_1.ttf') format('truetype'),
+        url('HankenGrotesk-Regular_1.svg#HankenGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
